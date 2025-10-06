@@ -1,0 +1,15 @@
+# Ignore temp and cache folders
+tmp/
+log.txt
+
+# Ignore transient SQLite files
+*.sqlite-shm
+*.sqlite-wal
+
+# Optional: uncomment to exclude main DB
+# database.sqlite
+
+# Ignore system clutter
+.DS_Store
+Thumbs.db
+desktop.ini
