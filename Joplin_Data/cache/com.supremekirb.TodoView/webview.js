@@ -1,0 +1,1 @@
+document.addEventListener("click",(e=>{const t=e.target;"todo-goto-link"===t.className&&webviewApi.postMessage({name:"openNote",id:t.dataset.id})}));

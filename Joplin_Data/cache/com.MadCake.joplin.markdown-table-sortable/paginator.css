@@ -1,0 +1,211 @@
+/*------------------------------------------------
+	Hyphens
+------------------------------------------------*/
+
+body {
+    /*
+		By default the notes are not automatically hyphenated. The plugin inserts manual hyphenation for paginated notes, but for normal notes we disable it to preserve default behavior.
+
+		As a side-effect, you can't insert manual hyphenation in normal notes. But without a fixed page width, why would you?
+	*/
+    hyphens: none;
+}
+
+/*------------------------------------------------
+	Preview in Joplin app
+------------------------------------------------*/
+
+#joplin-container-content .paginator-container {
+    --padding: 10px;
+    --background: #e9e9e9;
+    box-shadow: 0px 0px 0px var(--padding) var(--background);
+    background-color: var(--background);
+    padding-bottom: calc(var(--padding) * 2);
+}
+
+#joplin-container-content .paginator-container:first-child {
+    margin-top: var(--padding);
+}
+
+#joplin-container-content .paginator {
+    outline: 1px solid #0003;
+    box-shadow: 0px 2px 4px #000a;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------------------------------------------------
+	PDF
+------------------------------------------------*/
+
+.paginator > *:first-child {
+    margin-top: 0px;
+}
+
+.paginator-container {
+    counter-increment: page-counter;
+    position: relative;
+}
+
+.paginator::after {
+    content: counter(page-counter);
+    position: absolute;
+    bottom: 1.5cm;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.paginator-container,
+.paginator {
+    margin: 0px;
+    padding: 0px;
+}
+
+.paginator {
+    --column-gap: 25pt;
+
+    box-sizing: border-box;
+    column-gap: var(--column-gap);
+    column-count: 2;
+    column-fill: auto;
+    width: 21cm;
+    height: 29.7cm;
+    padding: 2.5cm;
+    overflow: hidden;
+    background: white;
+    text-align: justify;
+    widows: 4;
+    orphans: 4;
+    hyphens: manual; /* use manual hyphens from the hyphen npm package */
+    position: relative;
+}
+
+/*------------------------------------------------
+	H1 (column-span: 1)
+------------------------------------------------*/
+
+.paginator h1 {
+    column-span: all;
+}
+
+.paginator h1 + * {
+    margin-top: 0px;
+}
+
+/*------------------------------------------------
+	Print Settings
+------------------------------------------------*/
+
+@media print {
+    @page {
+        size: a4;
+        margin: 0px;
+    }
+}
+
+/*------------------------------------------------
+	ColumnBreak
+------------------------------------------------*/
+
+.paginator-columnBreak {
+    visibility: hidden;
+    break-after: column;
+}
+
+.paginator-columnBreak + * {
+    margin-top: 0px;
+}
+
+/*------------------------------------------------
+	TOC
+------------------------------------------------*/
+
+.paginator .table-of-contents {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    --size-1: 1.2rem;
+    --size-2: 1rem;
+    --size-dots: var(--size-2);
+    --line-height: 1.2;
+    column-span: all;
+}
+
+.paginator .table-of-contents li,
+.paginator .table-of-contents ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.paginator .table-of-contents > ul {
+    height: 100%;
+    width: 100%;
+    line-height: var(--line-height);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: var(--column-gap);
+    font-size: var(--size-1);
+}
+
+.paginator .table-of-contents > ul > li {
+    break-inside: avoid;
+    width: calc(50% - var(--column-gap) / 2);
+}
+
+.paginator .table-of-contents > ul > li > ul {
+    font-size: var(--size-2);
+}
+
+.paginator .toc-page-number {
+    font-size: var(--size-2);
+}
+
+.paginator .table-of-contents > ul > li > ul > li > ul {
+    display: none;
+}
+
+.paginator .table-of-contents li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.paginator .table-of-contents > ul ul {
+    grid-column: span 2;
+}
+
+.paginator .table-of-contents a {
+    overflow: hidden;
+    position: relative;
+}
+
+.paginator .table-of-contents > ul > li > a::after {
+    content: ".\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.";
+    word-break: break-all;
+    overflow-wrap: break-word;
+    position: absolute;
+    font-size: var(--size-dots);
+    line-height: calc(var(--size-1) * var(--line-height));
+}
+
+.paginator .table-of-contents > ul > li > ul > li a::after {
+    content: ".\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.\00AD.";
+    word-break: break-all;
+    overflow-wrap: break-word;
+    position: absolute;
+    font-size: var(--size-dots);
+}
+
+.paginator .toc-page-number {
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--size-dots);
+}
+
+.paginator .table-of-contents > ul > li > .toc-page-number {
+    line-height: calc(var(--size-1) * var(--line-height));
+}

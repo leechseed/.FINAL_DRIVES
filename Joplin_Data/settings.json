@@ -1,0 +1,66 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"altInstanceId": "",
+	"editor.codeView": true,
+	"sync.target": 2,
+	"sync.2.path": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\.ASTRO7EX.SYNC.JOPLIN",
+	"richTextBannerDismissed": true,
+	"locale": "en_US",
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm A",
+	"ocr.enabled": true,
+	"theme": 1,
+	"themeAutoDetect": false,
+	"showNoteCounts": true,
+	"layoutButtonSequence": 3,
+	"uncompletedTodosOnTop": false,
+	"showCompletedTodos": false,
+	"notes.sortOrder.field": "title",
+	"notes.sortOrder.reverse": false,
+	"notes.perFieldReverse": {
+		"user_updated_time": true,
+		"user_created_time": false,
+		"title": false,
+		"order": true,
+		"todo_due": true,
+		"todo_completed": false
+	},
+	"notes.listRendererId": "compact",
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"markdown.plugin.emoji": false,
+	"startMinimized": false,
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "sideBar",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "noteList",
+				"width": 369,
+				"visible": true
+			},
+			{
+				"key": "editor",
+				"visible": true
+			}
+		],
+		"visible": true
+	},
+	"noteVisiblePanes": [
+		"editor",
+		"viewer"
+	],
+	"editor.spellcheckBeta": true,
+	"api.token": "e8f61acf30f1b5c1ff7228f35d62cddc67dcb08c01ccf41e2ecb6a50cad4d4195d33a42d9704d4fb2cbe5d0c01052edcdca1521faf971d7bd9701c69613eae5f",
+	"spellChecker.enabled": true,
+	"spellChecker.languages": [
+		"en-US"
+	],
+	"plugin-io.github.personalizedrefrigerator.codemirror6-settings.highlightActiveLine": true,
+	"plugin-io.github.personalizedrefrigerator.codemirror6-settings.highlightSelectionMatches": true,
+	"plugin-io.github.personalizedrefrigerator.codemirror6-settings.wordCount": true
+}

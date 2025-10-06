@@ -1,0 +1,312 @@
+2025-05-05 03:36:43: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-05 12:28:12: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-05 12:32:20: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-05 12:32:42: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-05 12:32:42: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-05-05 12:32:42: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-05-05 12:32:42: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-05-06 04:06:22: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-10 19:59:07: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-10 19:59:25: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-10 19:59:25: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-05-10 19:59:25: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-05-10 19:59:25: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-05-11 08:03:15: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-11 08:03:15: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-05-11 08:03:16: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-05-11 08:03:15: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-05-13 05:43:08: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-19 04:40:18: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-19 04:46:27: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-19 04:46:27: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-05-19 04:46:27: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-05-19 04:46:27: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-05-19 05:50:18: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-19 05:50:18: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-05-19 05:50:18: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-05-26 03:23:43: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-26 03:24:57: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-26 03:24:57: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-05-26 03:24:57: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-05-26 03:24:57: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-05-31 03:41:27: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-31 03:42:43: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-05-31 03:42:43: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-05-31 03:42:43: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-05 01:55:29: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-05 01:55:44: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-05 01:55:44: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-05 01:55:44: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-05 01:55:44: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-09 08:15:27: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-09 12:19:48: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-09 12:19:48: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-09 12:19:48: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-09 12:19:48: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-10 12:12:47: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-13 20:08:57: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-14 00:28:12: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-14 00:28:12: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-14 00:28:12: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-14 00:28:12: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-14 00:28:13: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-14 00:29:38: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-14 00:29:38: Sending message: {"action":"onSecondInstance","data":{"senderPort":2658,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-14 00:29:38: Got message: {"action":"onSecondInstance","data":{"senderPort":2658,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2658}
+2025-06-14 00:29:38: [error] Could not send message on port 2659: FetchError: invalid json response body at http://localhost:2659/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2659/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-14 03:38:30: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-14 03:40:49: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-14 03:40:49: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-14 03:40:49: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-14 03:40:49: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-15 12:23:20: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-15 12:23:20: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-15 12:23:20: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-15 12:23:20: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-16 00:49:15: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 00:51:00: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 00:51:17: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 00:51:17: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-16 00:51:17: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-16 00:51:17: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-16 01:02:13: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 01:03:40: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 01:10:35: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 01:13:02: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 01:13:02: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-16 01:13:02: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-16 01:13:02: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-16 01:28:20: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 01:31:24: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 01:32:08: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 01:32:08: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-06-16 01:32:08: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-06-16 01:32:08: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-06-16 04:25:17: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 04:27:03: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-16 04:27:34: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-20 17:29:13: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-20 20:55:30: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-21 06:12:46: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-24 04:18:04: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-26 05:33:43: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 02:24:37: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 03:19:09: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 03:19:09: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-07-02 03:19:09: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-07-02 03:19:09: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-07-02 03:21:19: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 03:21:44: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 03:25:13: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 03:25:13: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-07-02 03:25:13: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-07-02 03:25:13: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-07-02 03:28:15: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 03:35:42: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 03:36:11: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-02 03:38:25: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-05 22:38:46: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-06 14:28:22: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-06 14:28:22: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-07-06 14:28:22: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-07-06 20:00:04: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-10 22:04:43: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-12 00:46:54: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-12 00:46:55: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-07-12 00:46:55: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-07-12 00:46:55: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-07-16 03:50:41: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-16 15:29:47: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-16 15:29:47: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-07-16 15:29:48: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\node_modules\@joplin\utils\dist\ipc.js:189:27)
+    at async ElectronAppWrapper.sendCrossAppIpcMessage (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:512:20)
+    at async ElectronAppWrapper.ensureSingleInstance (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:618:13)
+    at async ElectronAppWrapper.start (C:\Users\U01_LEECHSEED\AppData\Local\Programs\Joplin\resources\app.asar\ElectronAppWrapper.js:641:32)
+2025-07-16 15:29:47: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-07-21 17:15:32: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-24 16:51:13: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-24 16:51:19: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-07-24 16:51:19: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-07-24 16:51:19: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-07-24 16:51:47: Got message: {"action":"onSecondInstance","data":{"senderPort":2660,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop-alt1","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe","--alt-instance-id","alt1"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2660}
+2025-07-29 01:48:30: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-08-01 04:36:45: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-08-12 20:12:19: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-08-19 12:02:22: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-08-29 13:44:31: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-08-29 13:46:37: Got message: {"action":"onSecondInstance","data":{"senderPort":2660,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop-alt1","argv":["C:\\Users\\U01_LEECHSEED\\AppData\\Local\\Programs\\Joplin\\Joplin.exe","--alt-instance-id","alt1"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2660}
+2025-09-04 13:35:16: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-06 02:08:04: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-06 02:09:03: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-06 20:40:52: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-08 03:40:59: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-16 06:25:16: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-16 23:31:21: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-16 23:31:21: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Program Files\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-09-16 23:31:21: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Program Files\Joplin\resources\app.asar\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:111:5548)
+    at async r6e.sendCrossAppIpcMessage (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:12556)
+    at async r6e.ensureSingleInstance (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:14453)
+    at async r6e.start (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:15039)
+2025-09-16 23:31:21: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Program Files\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-09-23 13:35:38: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-24 07:25:20: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-24 07:25:22: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-24 07:25:22: Sending message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Program Files\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-09-24 07:25:22: Got message: {"action":"onSecondInstance","data":{"senderPort":2659,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Program Files\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2659}
+2025-09-24 07:27:15: Got message: {"action":"onSecondInstance","data":{"senderPort":2660,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop-alt1","argv":["C:\\Program Files\\Joplin\\Joplin.exe","--alt-instance-id","alt1"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2660}
+2025-09-24 07:30:12: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-09-24 07:30:12: Sending message: {"action":"onSecondInstance","data":{"senderPort":2660,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Program Files\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI"}
+2025-09-24 07:30:12: Got message: {"action":"onSecondInstance","data":{"senderPort":2660,"profilePath":"C:/Users/U01_LEECHSEED/.config/joplin-desktop","argv":["C:\\Program Files\\Joplin\\Joplin.exe"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2660}
+2025-09-24 07:30:12: [error] Could not send message on port 2658: FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2658/ reason: Unexpected end of JSON input
+    at C:\Program Files\Joplin\resources\app.asar\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:111:5548)
+    at async r6e.sendCrossAppIpcMessage (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:12556)
+    at async r6e.ensureSingleInstance (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:14453)
+    at async r6e.start (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:15039)
+2025-09-24 07:30:12: [error] Could not send message on port 2659: FetchError: invalid json response body at http://localhost:2659/ reason: Unexpected end of JSON input
+FetchError: invalid json response body at http://localhost:2659/ reason: Unexpected end of JSON input
+    at C:\Program Files\Joplin\resources\app.asar\node_modules\node-fetch\lib\index.js:273:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async sendMessage (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:111:5548)
+    at async r6e.sendCrossAppIpcMessage (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:12556)
+    at async r6e.ensureSingleInstance (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:14453)
+    at async r6e.start (C:\Program Files\Joplin\resources\app.asar\main.bundle.js:3553:15039)
+2025-09-28 05:13:27: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-10-06 00:55:10: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-10-06 10:03:20: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-10-06 10:07:33: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-10-06 10:11:56: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-10-06 10:12:51: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-10-06 10:15:29: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
+2025-10-06 10:16:51: Got message: {"action":"onSecondInstance","data":{"senderPort":2660,"profilePath":"D:/.FINAL_DRIVES/Joplin_Data","argv":["C:\\Program Files\\Joplin\\Joplin.exe","--profile","D:\\.FINAL_DRIVES\\Joplin_Data"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2660}
+2025-10-06 10:16:56: Got message: {"action":"onSecondInstance","data":{"senderPort":2660,"profilePath":"D:/.FINAL_DRIVES/Joplin_Data","argv":["C:\\Program Files\\Joplin\\Joplin.exe","--profile","D:\\.FINAL_DRIVES\\Joplin_Data"]},"secretKey":"JMWKzSMM92TvSlP4DZyuMVKbeE1aGaGHzbxloZqyK7EWoXBKBoZvxB822PUGUBwI","sourcePort":2660}
+2025-10-06 10:21:22: Starting server using secret key: C:/Users/U01_LEECHSEED/.config/joplin-desktop/ipc_secret_key.txt
