@@ -1,0 +1,52 @@
+12.11.2025
+
+**SYSTEM CONTEXT: "The Atomic Astrology Engine"**
+
+I am building a narrative RPG character database using Python and PostgreSQL. We have established a specific architecture called "Atomic Astrology," where character stats are derived from weighted narrative tags rather than assigned manually.
+
+**1. The Tech Stack:**
+* **Database:** PostgreSQL (`atomic_astro_db`).
+* **Language:** Python (`pg8000` driver).
+* **Core Logic:** Weighted Tag Summation (Variables * Weight = BFAS Personality Score).
+
+**2. The Narrative Tone (Crucial):**
+The writing style is "Neo-Mythic," blending grounded realism with high-concept existentialism.
+* **Sun:** 80% *Life is Strange* / 20% *Cyberpunk 2077* (Identity/Ego).
+* **Moon:** 100% *Neon Genesis Evangelion* (Trauma/Defense/Isolation).
+* **Mercury:** 100% *Life is Strange* (Anxiety/Internal Monologue).
+* **Venus:** *Nymphomaniac* + *Blue is the Warmest Color* (Obsession/Vice).
+* **Mars:** *Fight Club* + *The Social Network* (Aggression/Sabotage).
+* **Jupiter:** *LiS* + *Eva* (Grand Narrative/Justification).
+* **Saturn:** 100% *GTA V* (Institutional Debt/Cynicism).
+* **Uranus:** *Harry Potter* + *Eva* (Magical/Tech Rebellion).
+* **Neptune:** *Nymphomaniac* + *Requiem for a Dream* (Addiction/Delusion).
+* **Pluto:** *The Bible* + *The Story of Us* (Total Power/Erasure).
+
+**3. The File Architecture:**
+* `archetype_text.py`: **The Source of Truth.** A Python dictionary (`ZODIAC_DATA`) containing all narrative text for 12 signs x 10 planets.
+* `astro_logic.py`: **The Brain.** Calculates stats. It pulls variables from the DB, applies a "Volume/Resonance" multiplier (1-12 scale), and sums them into BFAS scores.
+* `create_from_template.py`: **The Generator.** Creates a character by pulling text from `archetype_text.py` and inserting it into the DB.
+* `map_bfas.py`: **The Wiring.** Defines which narrative tags map to which personality trait (e.g., "Aries Sun" = +1.0 Assertiveness).
+
+**4. The Database Schema:**
+* `characters`: (char_id, name, archetype, level).
+* `atomic_variable_def`: (var_id, var_code, name).
+* `atomic_values`: (char_id, var_id, value_text). The active tags on a character.
+* `character_resonance`: (char_id, subsystem_code, volume). A "Volume Knob" (1-12) that multiplies the impact of a specific planet for a specific character.
+* `bfas_scores`: (char_id, trait, score). The final calculated output.
+
+**Current State:**
+The system is fully operational. We have populated the full library (`archetype_text.py`) with the specific tonal descriptions listed above. We have implemented the "Resonance" logic (integer 1-12 scale) to allow per-character fine-tuning of their psychological drivers.
+
+**My Goal:**
+I am continuing to refine this system. Please act as a co-developer familiar with this specific architecture and tone.
+
+---
+
+### How to use this:
+1.  **Save this text** on your computer.
+2.  **Open a new Gemini window.**
+3.  **Paste this entire block.**
+4.  **Ask your next question:** (e.g., *"Okay, now I want to build a script to visualize the difference between a high-resonance Mars and a low-resonance Mars."*)
+
+The new AI will immediately understand the "Eva/GTA" tone and the "Weighted Sum" math without you needing to re-explain it.

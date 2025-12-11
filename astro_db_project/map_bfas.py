@@ -8,104 +8,99 @@ DB_CONFIG = {
     "port": 5433
 }
 
-# THE MASTER WIRING PLAN
-# Connecting Lore (Planets) -> Mechanics (BFAS)
-wiring_plan = [
-    # --- EXTRAVERSION: ASSERTIVENESS (Dominance, Agency) ---
-    {"source": "SUN_MOTIVATION_VECTOR", "target": "ASSERTIVENESS", "weight": 0.8},
-    {"source": "SOCIAL_POWER_LEVEL",    "target": "ASSERTIVENESS", "weight": 1.0},
-    {"source": "MARS_ACTION_STYLE",     "target": "ASSERTIVENESS", "weight": 1.2}, # Mars is the engine of agency
-    {"source": "PLUTO_POWER_ARCHETYPE", "target": "ASSERTIVENESS", "weight": 0.5},
+# --- THE 1-12 IMPACT SCALE ---
+TRACE = 1       # Barely noticeable
+NUANCE = 3      # Flavor / Tilt
+STANDARD = 5    # Baseline behavior (The old "1.0")
+STRONG = 8      # Strong Drive (The old "1.5")
+COMPULSIVE = 10 # Overwhelming urge
+ABSOLUTE = 12   # Unbreakable law
 
-    # --- EXTRAVERSION: ENTHUSIASM (Sociability, Joy) ---
-    {"source": "SUN_EGO_STYLE",           "target": "ENTHUSIASM", "weight": 1.0},
-    {"source": "ASC_INTERACTION_STYLE",   "target": "ENTHUSIASM", "weight": 0.8},
-    {"source": "VENUS_PLEASURE_METRICS",  "target": "ENTHUSIASM", "weight": 0.6}, # Venus likes fun
-
-    # --- NEUROTICISM: VOLATILITY (Anger, Impulse) ---
-    {"source": "MARS_CONFLICT_TRIGGER", "target": "VOLATILITY", "weight": 1.2},
-    {"source": "MOON_TRIGGER_SET",      "target": "VOLATILITY", "weight": 0.8},
-    {"source": "URANUS_REBELLION_STYLE","target": "VOLATILITY", "weight": 0.5},
-
-    # --- NEUROTICISM: WITHDRAWAL (Anxiety, Depression) ---
-    {"source": "MOON_NEED_CORE",        "target": "WITHDRAWAL", "weight": 1.0},
-    {"source": "MOON_SURVIVAL_SCRIPT",  "target": "WITHDRAWAL", "weight": 1.0},
-    {"source": "SATURN_LIMITATION_STYLE","target": "WITHDRAWAL", "weight": 0.8}, # Saturn restricts/depresses
-    {"source": "NEPTUNE_ESCAPISM_STYLE","target": "WITHDRAWAL", "weight": 0.5},
-
-    # --- AGREEABLENESS: COMPASSION (Empathy) ---
-    {"source": "MOON_ATTACHMENT_PATTERN", "target": "COMPASSION", "weight": 1.0},
-    {"source": "VENUS_LOVE_STYLE",        "target": "COMPASSION", "weight": 1.0},
-    {"source": "NEPTUNE_DREAM_WORLD",     "target": "COMPASSION", "weight": 0.4}, # Neptune dissolves boundaries
-
-    # --- AGREEABLENESS: POLITENESS (Manners, Norms) ---
-    {"source": "ASC_INTERACTION_STYLE",   "target": "POLITENESS", "weight": 0.8},
-    {"source": "VENUS_RELATIONAL_VALUES", "target": "POLITENESS", "weight": 1.0},
-    {"source": "SATURN_DISCIPLINE_MODE",  "target": "POLITENESS", "weight": 0.5}, # Saturn likes rules
-
-    # --- CONSCIENTIOUSNESS: INDUSTRIOUSNESS (Drive, Grit) ---
-    {"source": "SUN_PRIDE_CENTER",        "target": "INDUSTRIOUSNESS", "weight": 0.8},
-    {"source": "SATURN_DISCIPLINE_MODE",  "target": "INDUSTRIOUSNESS", "weight": 1.5}, # Saturn IS industry
-    {"source": "MARS_ACTION_STYLE",       "target": "INDUSTRIOUSNESS", "weight": 0.5},
-
-    # --- CONSCIENTIOUSNESS: ORDERLINESS (Structure, Cleanliness) ---
-    {"source": "SATURN_LIMITATION_STYLE", "target": "ORDERLINESS", "weight": 0.5},
-    {"source": "MERCURY_DECISION_PROCESS","target": "ORDERLINESS", "weight": 0.7}, # Logic requires order
-
-    # --- OPENNESS: INTELLECT (Logic, Ideas) ---
-    {"source": "MERCURY_COGNITION_STYLE", "target": "INTELLECT", "weight": 1.5}, # Mercury IS intellect
-    {"source": "SUN_THEMATIC_QUESTION",   "target": "INTELLECT", "weight": 0.5},
-    {"source": "URANUS_GENIUS_LOCUS",     "target": "INTELLECT", "weight": 0.8},
-
-    # --- OPENNESS: CREATIVITY (Aesthetics, Fantasy) ---
-    {"source": "VENUS_ATTRACTION_PROFILE","target": "OPENNESS_CREATIVE", "weight": 0.8},
-    {"source": "NEPTUNE_DREAM_WORLD",     "target": "OPENNESS_CREATIVE", "weight": 1.2}, # Neptune IS fantasy
-    {"source": "ASC_SURFACE_IMAGE",       "target": "OPENNESS_CREATIVE", "weight": 0.5}
-]
+def add_mapping(conn, source, trait, weight):
+    # We explicitly cast weight to INT to ensure no decimals sneak in
+    weight = int(weight)
+    conn.run("""
+        INSERT INTO bfas_mapping (source_value, target_trait, weight, source_type)
+        VALUES (:src, :trait, :w, 'ASTRO')
+        ON CONFLICT (source_value, target_trait) 
+        DO UPDATE SET weight = :w
+    """, src=source, trait=trait, w=weight)
 
 def wire_bfas():
     try:
         conn = pg8000.native.Connection(**DB_CONFIG)
-        print("✅ Connected. Wiring Full Solar System to BFAS...")
+        
+        # --- 1. SUN (Identity / Ego) ---
+        # Impact: STRONG (8) because Ego is a major driver
+        add_mapping(conn, "SUN_MOTIVATION_VECTOR", "Assertiveness", STRONG)
+        add_mapping(conn, "SUN_EGO_STYLE", "Enthusiasm", STRONG) 
+        add_mapping(conn, "SUN_PRIDE_CENTER", "Industriousness", STRONG)
+        add_mapping(conn, "SUN_THEMATIC_QUESTION", "Intellect", STANDARD) # More philosophical
 
-        # 1. Index IDs
-        var_map = {}
-        for row in conn.run("SELECT var_code, atomic_var_id FROM atomic_variable_def"):
-            var_map[row[0]] = row[1]
-            
-        dim_map = {}
-        for row in conn.run("SELECT dimension_code, dimension_id FROM overlay_model_dimension"):
-            dim_map[row[0]] = row[1]
+        # --- 2. MOON (Emotional Core) ---
+        # Impact: COMPULSIVE (10) because Trauma/Safety overrides logic
+        add_mapping(conn, "MOON_NEED_CORE", "Withdrawal", COMPULSIVE)
+        add_mapping(conn, "MOON_SURVIVAL_SCRIPT", "Withdrawal", COMPULSIVE)
+        add_mapping(conn, "MOON_TRIGGER_SET", "Volatility", COMPULSIVE)
+        add_mapping(conn, "MOON_ATTACHMENT_PATTERN", "Compassion", STRONG)
 
-        # 2. Insert Wires
-        count = 0
-        skipped = 0
-        for wire in wiring_plan:
-            src_id = var_map.get(wire['source'])
-            tgt_id = dim_map.get(wire['target'])
-            
-            if src_id and tgt_id:
-                conn.run("""
-                    INSERT INTO variable_mappings (atomic_var_id, dimension_id, weight)
-                    VALUES (:vid, :did, :w)
-                    ON CONFLICT (atomic_var_id, dimension_id) DO UPDATE 
-                    SET weight = :w;
-                """, vid=src_id, did=tgt_id, w=wire['weight'])
-                count += 1
-                print(f"   🔗 Wired: {wire['source']} -> {wire['target']}")
-            else:
-                skipped += 1
-                missing = wire['source'] if not src_id else wire['target']
-                # Only print warning if you want to debug missing vars
-                # print(f"   ⚠️ Skipping: {missing} not found.")
+        # --- 3. MERCURY (Mind) ---
+        # Impact: STANDARD (5) to STRONG (8)
+        add_mapping(conn, "MERCURY_COGNITION_STYLE", "Intellect", STRONG)
+        add_mapping(conn, "MERCURY_DECISION_PROCESS", "Orderliness", STANDARD)
+        # Note: Communication style is narrative, affects Politeness/Enthusiasm
+        add_mapping(conn, "MERCURY_COMMUNICATION_STYLE", "Enthusiasm", STANDARD)
+
+        # --- 4. VENUS (Desire) ---
+        # Impact: STRONG (8)
+        add_mapping(conn, "VENUS_LOVE_STYLE", "Compassion", STRONG)
+        add_mapping(conn, "VENUS_PLEASURE_METRICS", "Enthusiasm", STRONG)
+        add_mapping(conn, "VENUS_RELATIONAL_VALUES", "Politeness", STANDARD)
+        add_mapping(conn, "VENUS_ATTRACTION_PROFILE", "Openness", STANDARD)
+
+        # --- 5. MARS (Conflict) ---
+        # Impact: COMPULSIVE (10) for Violence/Action
+        add_mapping(conn, "MARS_ACTION_STYLE", "Assertiveness", COMPULSIVE)
+        add_mapping(conn, "MARS_ACTION_STYLE", "Industriousness", STANDARD) # Takes effort to fight
+        add_mapping(conn, "MARS_CONFLICT_TRIGGER", "Volatility", COMPULSIVE)
+        add_mapping(conn, "MARS_SEXUAL_DRIVE_MODE", "Enthusiasm", STANDARD)
+
+        # --- 6. JUPITER (Growth) ---
+        # Impact: STANDARD (5)
+        add_mapping(conn, "JUPITER_GROWTH_STRATEGY", "Openness", STRONG)
+        add_mapping(conn, "JUPITER_EXPANSION_FIELD", "Assertiveness", STANDARD)
+        add_mapping(conn, "MAIN_GOAL_TYPE", "Industriousness", STANDARD)
+
+        # --- 7. SATURN (Limitation) ---
+        # Impact: COMPULSIVE (10) for Fear/Restriction
+        add_mapping(conn, "SATURN_LIMITATION_STYLE", "Withdrawal", COMPULSIVE) # Fear
+        add_mapping(conn, "SATURN_LIMITATION_STYLE", "Orderliness", STRONG)    # Control
+        add_mapping(conn, "SATURN_DISCIPLINE_MODE", "Industriousness", STRONG)
+        add_mapping(conn, "SATURN_DISCIPLINE_MODE", "Politeness", STANDARD)     # Social Protocol
+
+        # --- 8. URANUS (Chaos) ---
+        # Impact: STRONG (8)
+        add_mapping(conn, "URANUS_REBELLION_STYLE", "Volatility", STRONG)
+        add_mapping(conn, "URANUS_REBELLION_STYLE", "Openness", STRONG)       # Radical Ideas
+        add_mapping(conn, "URANUS_GENIUS_LOCUS", "Intellect", STRONG)
+
+        # --- 9. NEPTUNE (Illusion) ---
+        # Impact: COMPULSIVE (10) for Addiction/Escape
+        add_mapping(conn, "NEPTUNE_ESCAPISM_STYLE", "Withdrawal", COMPULSIVE)
+        add_mapping(conn, "NEPTUNE_DREAM_WORLD", "Openness", COMPULSIVE)      # Fantasy
+        add_mapping(conn, "NEPTUNE_DREAM_WORLD", "Compassion", STANDARD)      # Merging
+
+        # --- 10. PLUTO (Power) ---
+        # Impact: ABSOLUTE (12) - The Shadow Logic
+        add_mapping(conn, "PLUTO_POWER_ARCHETYPE", "Assertiveness", ABSOLUTE)
+        add_mapping(conn, "PLUTO_SHADOW_PATTERN", "Volatility", STRONG)       # Manipulation
+        add_mapping(conn, "PLUTO_TRANSFORMATION_FIELD", "Openness", STRONG)   # Forced Change
 
         conn.close()
-        print(f"\n🎉 SUCCESS! Established {count} logic connections.")
-        if skipped > 0:
-            print(f"   (Skipped {skipped} connections because those variables aren't seeded yet)")
+        print("✅ BFAS Wiring Complete (Integer Scale 1-12).")
 
     except Exception as e:
-        print("\n❌ ERROR:", e)
+        print(f"❌ ERROR in map_bfas: {e}")
 
 if __name__ == "__main__":
     wire_bfas()
